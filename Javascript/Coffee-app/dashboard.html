@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="./index.html"><h3>Order</h3></a>
+        <a href="./dashboard.html"><h3>Dashboard</h3></a>
+      </div>
+      <div class="sort-filter">
+        <select name="" id="filter">
+            <option value="">Filter</option>
+            <option value="coffeeType">Coffee type</option>
+            <option value="size">Size</option>
+        </select>
+        <button onclick="handleSort()">price-sort</button>
+      </div>
+    <div class="tableData">
+     <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Coffee</th>
+            <th>Size</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+     </table>
+     <div class="pagination">
+        <button>Prev</button>
+        <button>1</button>
+        <button>Next</button>
+     </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/dashboard.js"></script>

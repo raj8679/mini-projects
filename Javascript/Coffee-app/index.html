@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Coffee</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html"><h3>Order</h3></a>
+      <a href="./dashboard.html"><h3>Dashboard</h3></a>
+    </div>
+    <div class="body">
+     <form action="">
+        <label>Customer Name:</label>
+        <input type="text" id="customer-name">
+         <br>
+         <br>
+       <label for="">Coffee Type</label>
+       <select name="" id="coffee-type">
+        <option value="Americano">Americano</option>
+        <option value="Expresso">Expresso</option>
+        <option value="Cappuccino">Cappuccino</option>
+       </select>
+      <br>
+      <br>
+       <label for="">Size:</label>
+       <select name="" id="size">
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+       </select>
+        <br>
+        <br>
+        <label for="" >Quantity:</label>
+        <input id="quantity" type="number" value="1" oninput="handleTotalPrice()">
+        <br>
+        <br>
+        <label for="">Total Price: </label>
+        <input type="text" id="price" value="100" readonly>
+        <br>
+        <br>
+        <input type="submit">
+     </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>

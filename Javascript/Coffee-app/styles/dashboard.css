@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+}
+.navbar {
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.tableData {
+    border: 2px solid tomato;
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px;
+}
+.pagination {
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
