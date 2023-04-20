@@ -13,12 +13,23 @@
         <a href="./dashboard.html"><h3>Dashboard</h3></a>
       </div>
       <div class="sort-filter">
-        <select name="" id="filter">
-            <option value="">Filter</option>
-            <option value="coffeeType">Coffee type</option>
-            <option value="size">Size</option>
+        <select name="" id="filter-by-type">
+            <option value="">Coffee-type</option>
+            <option value="Americano">Americano</option>
+            <option value="Expresso">Expresso</option>
+            <option value="Cappuccino">Cappuccino</option>
         </select>
-        <button onclick="handleSort()">price-sort</button>
+        <select name="" id="filter-by-size">
+            <option value="">Coffee-size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+        <select name="" id="price-sorting">
+            <option value="">Price</option>
+            <option value="asc">asc</option>
+            <option value="desc">desc</option>
+        </select>
       </div>
     <div class="tableData">
      <table>
@@ -37,7 +48,7 @@
 
         </tbody>
      </table>
-     <div class="pagination">
+     <div id="pagination">
         <button>Prev</button>
         <button>1</button>
         <button>Next</button>
