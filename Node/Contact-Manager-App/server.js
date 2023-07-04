@@ -4,6 +4,7 @@ require('dotenv').config();
 const contactRouter = require("./routes/contactRoutes");
 const errorHandler = require("./middleware/errorHandler");
 const connectDb = require("./config/dbConnection")
+const userRouter = require("./routes/userRoutes")
 
 connectDb();
 const app = express();
@@ -16,6 +17,7 @@ app.get('/', (req,res) => {
 })
 
 app.use("/contact", contactRouter)
+app.use("/user", userRouter)
 
 app.use(errorHandler)
 
